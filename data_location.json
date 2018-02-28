@@ -1,0 +1,14 @@
+{
+	"locations": [
+	
+		{
+			"name": "Weather",
+			"description": "Location for weather: La Jolla, CA"
+		},
+		{
+			"name": "Affirmation",
+			"description": "~I wake up today with strength in my heart and clarity in my mind~"
+		}
+
+	]
+}

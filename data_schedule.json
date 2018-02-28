@@ -1,0 +1,15 @@
+{
+	"events": [
+
+		{
+			"description": "Work - 8:00am to 1:00pm"
+		},
+		{
+			"description": "Cogs 107b - 2:00pm to 3:30pm"
+		},
+		{
+			"description": "Study - 5:00pm to 9:00pm"
+		}
+
+	]
+}

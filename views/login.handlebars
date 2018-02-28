@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Skeleton Main Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+	<div class="container" id="login">
+
+    <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+    <!-- p means paragraph -->
+		<div class="jumbotron">
+      <h2>____Welcome to____</h2>
+			<h1>MORNING RECAP</h1>
+    </div>
+
+
+
+
+  	   <div class="container">
+	     <label for="uname"><b>Username</b></label>
+	     <input type="text" placeholder="Enter Username" name="uname" required>
+<br></br>
+	     <label for="psw"><b>Password</b></label>
+	     <input type="password" placeholder="Enter Password" name="psw" required>
+<br></br>
+
+<div class="page" id="page1">
+	<a href="/index">
+		<p style="text-align:center">Log In</p>
+	</a>
+</div>
+
+<p class="facebookLogin">
+							 <b> OR </b>login through Facebook <br></br>
+						<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+					</fb:login-button>
+					<a href="/index">
+						</p>
+		</div>
+		<div class="jumbotron">
+				<div class = fbName>
+
+				</div>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/login.js"></script>
+
+{{> facebook}}
+        <script src="/js/facebook.js"></script>
+
+</body>
+</html>

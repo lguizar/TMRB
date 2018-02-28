@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Skeleton Schedule Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+
+<div class="container" id="Index">
+  <div class="jumbotron">
+      <h1 align=center style="font-family:verdana;">Good evening, [NAME]!</h1>
+    </div>
+
+
+	<div class="container" id="New Location">
+    <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+    <!-- p means paragraph -->
+		<h3>Schedule</h3>
+		{{#each events}}
+				<div class="events">
+
+					<h6><b><li>{{description}}</li></b></h6>
+					<hr />
+				</div>
+			{{/each}}
+
+		<!--
+		-->
+    {{#each locations}}
+        <div class="location">
+
+          <h3>{{name}}</h3>
+          <h6><b>{{description}}</b></h6>
+          <hr />
+        </div>
+      {{/each}}
+
+
+					<div class="jumbotron" id="page1">
+			      <a href="/alarm">
+			        <p align=center>Confirm</p>
+			      </a>
+			    </div>
+
+					<div class="jumbotron" id="page2">
+			      <a href="/newEvent">
+			        <p align=center>Edit</p>
+			      </a>
+			    </div>
+
+					<div class="jumbotron" id="page3">
+			      <a href="/">
+			        <p align=center><font color="red">Log Out</p>
+			      </a>
+			    </div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/newLocation.js"></script>
+
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+
+
+</body>
+</html>
